@@ -1,0 +1,7 @@
+#! /bin/bash
+# kills dwm-session/dwmblocks
+pkill dwm-session
+pkill dwmblocks
+
+# kills dwm
+pkill dwm

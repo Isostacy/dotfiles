@@ -1,0 +1,32 @@
+#!/bin/bash
+
+player_status=$(playerctl status 2> /dev/null)
+	if [ "$player_status" = "Playing" ]; then
+		music=" $(playerctl metadata title) - $(playerctl metadata artist)"
+	elif [ "$player_status" = "Paused" ]; then
+		music=" $(playerctl metadata title) - $(playerctl metadata artist)"
+	else
+		music=" No music playing"
+	fi
+	
+vol="$(pamixer --get-volume)"
+
+cpu=$(top -b -n1 | grep "Cpu(s)" | awk '{print $2 + $4}')
+
+mem=$(free -h | awk '/^Mem:/ {print $3 "/" $2}' | sed 's/i//g')
+
+btw=$(uname -r)
+
+# pkgupdates=$(checkupdates | wc -l) 
+
+#	if [ "$pkgupdates" -gt "1" ]; then
+#			pkgicon=" "
+#		else
+#		        pkgicon=" "
+#	fi
+	
+date=$(date '+%a %b %d, %Y')
+
+time=$(date '+%I:%M %p')
+
+xsetroot -name "  $cpu% |  $mem | 🔊 $vol | $music |  $btw |  $date |  $time "
