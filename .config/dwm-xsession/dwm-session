@@ -1,0 +1,11 @@
+#! /bin/bash
+picom --experimental-backend &
+nitrogen --restore &
+playerctld &
+lxsession &
+dunst &
+flameshot &
+discord &
+dwmblocks &
+exec dwm
+xset s off &
