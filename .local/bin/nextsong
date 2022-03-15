@@ -1,2 +1,3 @@
 #! /bin/bash
 playerctl next &
+kill -44 $(pidof dwmblocks)
