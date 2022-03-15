@@ -41,8 +41,5 @@ _comp_options+=(globdots)
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
 
-xset s off
-export PATH="$HOME/.local/bin:$PATH"
 colorscript -e crunchbang
-export PATH="$PATH:$HOME/.spicetify"
 alias ls="ls -hFa --color=tty"
