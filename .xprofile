@@ -1,4 +1,4 @@
 #!/bin/sh
 nitrogen --restore & 
 playerctld &
-export PATH="$HOME/.local/bin:$PATH:$HOME/.cofig/rofi/bin"
+export PATH="$HOME/.local/bin:$PATH:$HOME/.config/rofi/bin"
