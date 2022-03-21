@@ -1,6 +1,0 @@
-[Desktop Entry]
-Name=dwm
-Comment=dynamic window manager
-Exec=/usr/share/xsessions/dwm-session
-Type=Application
-X-LightDM-DesktopName=dwm
