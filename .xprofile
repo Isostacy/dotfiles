@@ -1,4 +1,9 @@
 #!/bin/sh
 nitrogen --restore & 
+picom --experimental-backend &
+dunst &
+flameshot &
+lxsession &
 playerctld &
-export PATH="$HOME/.local/bin:$PATH:$HOME/.config/rofi/bin"
+dwmblocks &
+xset s off
